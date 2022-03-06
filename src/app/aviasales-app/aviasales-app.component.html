@@ -1,0 +1,19 @@
+
+  <div class="header">
+    <img src="assets/logo.svg" alt="logo" >
+  </div>
+  <div class="container">
+    <div class="filter">
+      <app-transfers  (checked)="checked($event)" ></app-transfers>
+      <app-companies
+      [companies]="companies"
+      (selectedId)="selected($event)"></app-companies>
+    </div>
+    <app-tickets-tabs [checked]="checkedName" [selectedId]="companyId" [stops]="checkedName"></app-tickets-tabs>
+  </div>
+
+<!--
+  [change]="transfers.value"
+-->
+
+
