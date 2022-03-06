@@ -1,0 +1,12 @@
+<div class="filter_companies">
+    <h3>компания</h3>
+    <mat-radio-button class="example-radio-button" [value]="null"
+                      (change)="getCheckedValue($event)">
+      <p>Все</p>
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button" *ngFor="let company of companies" [value]="company.id"
+                      (change)="getCheckedValue($event)">
+    <p>{{company.name}}</p>
+    </mat-radio-button>
+</div>
+

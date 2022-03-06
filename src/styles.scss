@@ -1,0 +1,79 @@
+@import url(https://allfont.ru/allfont.css?fonts=open-sans);
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #E5E5E5;
+  font-family: 'Open Sans', arial;
+  font-weight: 400;
+  color: #4A4A4A;
+  border: 1px solid red;
+  min-height: 100vh;
+  max-width: 754px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+p {
+
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+
+
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 103px;
+  &_transfers,&_companies {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+}
+//.btn {
+.mat-button-toggle {
+  width: 168px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  border: 1px solid #DFE5EC;
+  box-sizing: border-box;
+  &_clicked{
+    background: #2196F3;
+    color: #FFFFFF;
+  }
+}

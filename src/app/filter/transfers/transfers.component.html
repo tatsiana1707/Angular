@@ -1,0 +1,10 @@
+
+<section class="filter_transfers"   [formGroup]="transfers">
+    <h3>количество пересадок</h3>
+    <p><mat-checkbox  (change)="onChange($event)" formControlName="0">Без пересадок</mat-checkbox></p>
+    <p><mat-checkbox (change)="onChange($event)" formControlName="1"> 1 пересадка </mat-checkbox></p>
+    <p><mat-checkbox  (change)="onChange($event)" formControlName="2"> 2 пересадки</mat-checkbox></p>
+    <p><mat-checkbox (change)="onChange($event)" formControlName="3"> 3 пересадки</mat-checkbox></p>
+</section>
+
+
